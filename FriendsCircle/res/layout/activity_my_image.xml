@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyImageActivity" >
+
+       <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#393a3f" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/back" />
+            
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:paddingLeft="60dp"
+                android:layout_alignParentLeft="true"
+                android:text="我的相册"
+                android:textSize="18sp"
+                android:textColor="@android:color/white" />
+             
+             
+              <ImageView
+                  android:id="@+id/images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:paddingRight="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/camal" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+       <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:dividerHeight="0dp"
+         />
+
+</LinearLayout>

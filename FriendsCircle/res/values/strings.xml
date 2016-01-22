@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">微信</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_my_image">MyImageActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="xiangce">选择照片</string>
+    <string name="title_activity_show_bit_img">ShowBitImgActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="showbitimg">图片查看</string>
+    <string name="title_activity_show_image_view">ShowImageViewActivity</string>
+    <string-array name="zan_type">
+        <item>A类型</item>
+        <item>B类型</item>
+        <item>C类型</item>
+        <item>D类型</item>
+    </string-array>
+
+    <string name="title_activity_logo_select">LogoSelectActivity</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:text="今天"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="@id/date"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="45dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:text="11月"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="80dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/gv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="40dp"
+            android:numColumns="4"
+            android:paddingLeft="80dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+       >
+
+        <TextView
+            android:id="@+id/zan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="欢迎点赞" />
+
+        <TextView
+            android:id="@+id/how_images"
+                   android:layout_marginTop="60dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="共0张图片" />
+    </LinearLayout>
+
+</LinearLayout>

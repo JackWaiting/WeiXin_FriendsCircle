@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#393a3f" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="14dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="14dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="14dp"
+                android:paddingLeft="60dp"
+                android:paddingTop="14dp"
+                android:text="详情"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/w002" />
+
+        <View
+            android:layout_width="8dip"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张刚"
+                android:textColor="#576b95" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:text="这是我们公司的运动会，大家速来赞" />
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="显示更多"
+                android:visibility="gone" />
+
+            <GridView
+                android:id="@+id/gv_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="4" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="11月28号 15:43"
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/time"
+                    android:paddingLeft="5dip"
+                    android:text="删除"
+                    android:textColor="#576b95" />
+
+                <ImageButton
+                    android:id="@+id/imgButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/coment"
+                    android:focusable="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/detail"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/likeicon"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp" />
+
+                <ImageView
+                    android:id="@+id/contentimage"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:drawableLeft="@drawable/likeicon"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <GridView
+                    android:id="@+id/praise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numColumns="8"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

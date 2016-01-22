@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_main">#00d1db</color>
+    <color name="yes">#ececec</color>
+    <color name="no">#f8f8f8</color>
+    <color name="text_nomal_color">#999999</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="bule_overlay">#660D92DD</color>
+    <color name="item_nomar">#282d2c</color>
+    <color name="item_down">#1d1d20</color>
+
+</resources>

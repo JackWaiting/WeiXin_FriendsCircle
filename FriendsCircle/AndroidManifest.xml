@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.friendscircle"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.friendscircle.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.friendscircle.activity.MyImageActivity"
+            android:label="@string/title_activity_my_image" >
+        </activity>
+        <activity
+            android:name="com.example.friendscircle.activity.DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        <activity android:name="com.example.friendscircle.imgfile.ImgFileListActivity" >
+        </activity>
+        <activity
+            android:name="com.example.friendscircle.imgfile.ImgsActivity"
+            android:label="@string/xiangce" >
+        </activity>
+        <activity
+            android:name="com.example.friendscircle.activity.ShowBitImgActivity"
+            android:label="@string/showbitimg" >
+        </activity>
+        <activity
+            android:name="com.example.friendscircle.activity.ShowImageViewActivity"
+            android:label="@string/title_activity_show_image_view" >
+        </activity>
+        
+            <activity
+            android:name="com.ionesmile.datasource.DataSouceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.datasource.LogoSelectActivity"
+            android:label="@string/title_activity_logo_select" >
+        </activity>
+    </application>
+
+</manifest>
